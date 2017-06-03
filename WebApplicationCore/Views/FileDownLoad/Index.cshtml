@@ -1,0 +1,40 @@
+
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    var files = ViewData["files"] as FileInfo[];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>文件下载</h2>
+    @{
+        if (files != null && files.Any())
+        {
+
+            <table>
+                <tr>
+                    <td>文件</td>
+                    <td>操作</td>
+                </tr>
+                @{foreach (var file in files)
+                    {
+                        <tr>
+                            <td>@file.Name</td>
+                            <td><a href="Document/Download?filePath=@file.DirectoryName&fileName=@file.Name">下载</a></td>
+                        </tr>
+                    }
+                }
+            </table>}
+    }
+
+
+</body>
+</html>

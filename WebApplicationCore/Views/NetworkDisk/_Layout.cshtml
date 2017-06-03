@@ -1,0 +1,129 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    .left_panel {
+        background-color: black;
+        font: 12px/180% Arial, Helvetica, sans-serif, "微软雅黑";
+        width: 200px;
+    }
+
+        .left_panel.navbox {
+            float: left;
+        }
+
+        .left_panel ul.nav {
+            width: 200px;
+            padding: 60px 0 60px 0;
+            background: url() no-repeat;
+        }
+
+            .left_panel ul.nav li {
+                margin: 5px 0 0 0;
+            }
+
+                .left_panel ul.nav li a {
+                    background: #cbcbcb url() no-repeat;
+                    color: #174867;
+                    padding: 7px 15px 7px 15px;
+                    width: 100px;
+                    display: block;
+                    text-decoration: none;
+                    -webkit-transition: all 0.3s ease-out;
+                    -moz-transition: all 0.3s ease-out;
+                    -o-transition: all 0.3s ease-out;
+                    -webkit-box-shadow: 2px 2px 4px #888;
+                    -moz-box-shadow: 2px 2px 4px #888;
+                }
+
+                    .left_panel ul.nav li a:hover {
+                        background: #ebebeb url() no-repeat;
+                        color: #67a5cd;
+                        padding: 7px 15px 7px 30px;
+                    }
+
+    #content {
+        background-color: rebeccapurple;
+        float: right;
+    }
+</style>
+<div class="left_panel">
+    <div class="navbox">
+        <ul class="nav">
+            <li><a href="#">XHTML</a></li>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+    </div>
+</div>
+<div id="content">
+    <table id="table1">
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col" abbr="Starter">Smart Starter</th>
+                <th scope="col" abbr="Medium">Smart Medium</th>
+                <th scope="col" abbr="Business">Smart Business</th>
+                <th scope="col" abbr="Deluxe">Smart Deluxe</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Price per month</th>
+                <td>$ 2.90</td>
+                <td>$ 5.90</td>
+                <td>$ 9.90</td>
+                <td>$ 14.90</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">Storage Space</th>
+                <td>512MB</td>
+                <td>1 GB</td>
+                <td>2 GB</td>
+                <td>4 GB</td>
+            </tr>
+            <tr>
+                <th scope="row">Bandwidth</th>
+                <td>50 GB</td>
+                <td>100 GB</td>
+                <td>150 GB</td>
+                <td>unlimited</td>
+            </tr>
+            <tr>
+                <th scope="row">Mysql Databases</th>
+                <td>unlimited</td>
+                <td>unlimited</td>
+                <td>unlimited</td>
+                <td>unlimited</td>
+            </tr>
+            <tr>
+                <th scope="row">Setup</th>
+                <td>12.90 ___FCKpd___0lt;/td>
+                <td>12.90 ___FCKpd___0lt;/td>
+                <td>free</td>
+                <td>free</td>
+            </tr>
+            <tr>
+                <th scope="row">PHP 5</th>
+                <td><span class="check"></span></td>
+                <td><span class="check"></span></td>
+                <td><span class="check"></span></td>
+                <td><span class="check"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">Ruby on Rails</th>
+                <td><span class="check"></span></td>
+                <td><span class="check"></span></td>
+                <td><span class="check"></span></td>
+                <td><span class="check"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+@RenderBody()
+
