@@ -156,6 +156,7 @@ body {
         border-bottom: 1px solid #83ceed;
         border-right: 3px solid #f8881c;
         border-left: 3px solid #66c3ec;
+        cursor: pointer;
     }
 /*二级菜单选中状态*/
 .menu-second-selected {
