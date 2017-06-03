@@ -11,6 +11,10 @@
   <ItemGroup>
     <Content Remove="wwwroot/~%24710578.docx" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\lib\font-awesome\css\font-change.css" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
